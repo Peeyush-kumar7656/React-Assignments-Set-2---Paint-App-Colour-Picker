@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 const Selection = (props) => {
-  const [temp1,temp2] = useState({ background: "" })
-  const {key,applyColor } = props;
+    const {key,applyColor } = props;
+    let [background,setBackground] = useState({ background: "" })
   return (
-    <div className="fix-box" style={temp1} onClick={()=>{applyColor(temp2)}}>
+    <div className="fix-box" style={background} onClick={()=>{applyColor(setBackground)}}>
     <h2 className="subheading">Selection</h2>
     </div>
   )
